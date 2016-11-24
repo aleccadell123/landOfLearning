@@ -1,0 +1,134 @@
+/*============================
+=            Globals           =
+============================*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    background-color: moccasin;
+	font-family: "Montserrat", Georgia, sans-serif;
+	font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/*============================
+=            Header          =
+============================*/
+
+.banner {
+	background-color: #FFCE00;
+    background-repeat: repeat;
+	background-image: url(pattern.png);
+	height: 150px;
+	opacity: 1;
+	text-align: center;
+    margin-bottom: 10px;
+  
+}
+
+.banner h1 {
+	color: #262228;
+	font-weight: bold;
+	line-height: 150px;
+	margin-top: 0px;
+	font-size: 2.5em;
+	
+}
+
+.hero {
+	background-image: url(hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+/*============================
+=            Content         =
+============================*/
+
+content{
+	background-color: moccasin;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:5px;
+}
+.item {
+	background-color: #007849;
+	border-radius: 5px;
+	display: inline-block;
+	flex-grow: 1;
+	height: 400px;
+	margin:5px;
+	text-align: center;
+	width: 400px;
+}
+
+.item h2 {
+	background-color: #0375B4;
+	color: #262228;
+	display: block;
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+}
+
+.item span {
+	clear: both;
+	color: moccasin;
+	display: block;
+	font-size: 2.5em;
+}
+
+.info {
+	width:350px;
+	margin: 20% auto;
+}
+
+#italics {
+	font-size: 1.2em;
+	font-style: italic;
+	width: 350px;
+	margin: auto;
+}
+
+#artist {
+	margin-bottom: 10px;
+}
+
+.color-sample {
+	width: 350px;
+	height:220px;
+	background-color: #960018;
+	margin: 20px auto;
+	border: 10px solid moccasin;
+	border-radius: 50%;
+}
+
+.picture {
+	width:350px;
+	height: 250px;
+}
+
+.item p {
+	width: 350px;
+	margin: 20px auto;
+	color:moccasin;
+}
+
+
+/*============================
+=            Footer         =
+============================*/
+
+footer {
+	background-color: #FFCE00;
+	background-repeat: repeat;
+	background-image: url(pattern.png);
+	height: 150px;
+	width: 100%;
+}
