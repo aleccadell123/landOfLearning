@@ -29,10 +29,10 @@ body {
 
 .banner h1 {
 	color: #262228;
+	font-size: 2.5em;
 	font-weight: bold;
 	line-height: 150px;
 	margin-top: 0px;
-	font-size: 2.5em;
 	
 }
 
@@ -63,11 +63,13 @@ content{
 	border-radius: 5px;
 	display: inline-block;
 	flex-grow: 1;
-	height: 400px;
+	height: 500px;
 	margin:5px;
+	position: relative;
 	text-align: center;
 	width: 400px;
 }
+
 
 .item h2 {
 	background-color: #0375B4;
@@ -85,45 +87,70 @@ content{
 }
 
 .info {
-	width:350px;
-	margin: 20% auto;
-}
-
-#italics {
-	font-size: 1.2em;
-	font-style: italic;
-	width: 350px;
-	margin: auto;
-}
-
-#artist {
-	margin-bottom: 10px;
-}
-
-.color-sample {
-	width: 350px;
-	height:220px;
-	background-color: #960018;
-	margin: 20px auto;
-	border: 10px solid moccasin;
-	border-radius: 50%;
-}
-
-.picture {
-	width:350px;
-	height: 250px;
-}
-
-.item p {
-	width: 350px;
-	margin: 20px auto;
+	border: 4px outset moccasin;
 	color:moccasin;
+	height: 100px;
+	padding: 5%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transition: background-color .3s;
+	transition: top .3s;
+	width: 350px;
+}
+
+.a {
+	margin: -130px 0 0 -202px;
+
+}
+
+.b {
+	margin: 40px 0 0 -202px;
+}
+
+
+
+/*============================
+=     Content interaction     =
+============================*/
+
+
+.a:hover {
+	background-color: #005f39;
+	margin: -135px 0 0 -202px;
+}
+
+.b:hover {
+	background-color: #005f39;
+	margin: 35px 0 0 -202px;
+}
+
+.correct {
+	background-image: url(tick.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.incorrect {
+	background-image: url(cross.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
 }
 
 
 /*============================
 =            Footer         =
 ============================*/
+
 
 footer {
 	background-color: #FFCE00;
