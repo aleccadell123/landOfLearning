@@ -80,45 +80,41 @@ $query="SELECT * FROM person WHERE day = current_date() LIMIT 1";
 <head>
 	<meta charset="utf-8">
  	<link rel="stylesheet" type="text/css" href="normalize.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
  	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>Something New</title>
+	<title>Homepagelearning</title>
 </head>
 
 <body>
 	<header>
-		<div class='banner'>	
-			<h1>Something new everyday...</h1>
-		</div>
-		<div class='hero'></div>
-	</header>
-	<content>
+	
+	</header> 
+
+	<div class="wrapper">
+		
 										 						<!-- WORD -->
-		<div class='item word'>
-			<div class="markJar"></div>
+
+		<div class='item item__word'>
+			
 				
-			<h2>Word:</h2>
+			<div class="banner"><?php echo $word;?></div>
 
-			<span><?php echo $word;?></span>
+			<div class="info ans1">		
+				<p><?php echo $definition;?></p>
+			</div>
 
-				<div class="array">
-					
-					<div class="info ans1">		
-						<p><?php echo $definition;?></p>
-					</div>
-
-					<div class="info ans2">				
-						<p><?php echo $definitionB;?></p>
-					</div>
-					
-				</div>
+			<div class="info ans2">				
+				<p><?php echo $definitionB;?></p>
+			</div>
 
 		</div>
+
 										 						<!-- DATE -->
-		<div class='item date'>
-				<div class="markJar"></div>
+
+		<div class='item item__date'>
+				
 			
-					<h2>Date:</h2>
-					<span><?php echo $date;?></span>
+				<div class="banner"><?php echo $date;?></div>
 
 				<div class="info ans1">
 					<p><?php echo $event;?></p>
@@ -127,14 +123,14 @@ $query="SELECT * FROM person WHERE day = current_date() LIMIT 1";
 				<div class="info ans2">
 					<p><?php echo $eventB;?></p>
 				</div>
-
 		</div>
+
 										 						<!-- PERSON -->
-		<div class='item person'>
-				<div class="markJar"></div>
+
+		<div class='item item__person'>
+				
 			
-					<h2>Person:</h2>
-					<span><?php echo $person;?></span>
+				<div class="banner trueFalse"><?php echo $person;?></div>
 
 				<div class="info ans1">
 					<p><?php echo $description;?></p>
@@ -145,11 +141,12 @@ $query="SELECT * FROM person WHERE day = current_date() LIMIT 1";
 				</div>
 
 		</div>
-	</content>
 
-	<footer>
-		
-	</footer>
+	</div>
+	
+
+	<footer></footer>
+
 	<script type="text/javascript" src="jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="application.js"></script>
 </body>
